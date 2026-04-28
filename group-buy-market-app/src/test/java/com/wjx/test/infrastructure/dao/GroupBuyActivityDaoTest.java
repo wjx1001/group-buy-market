@@ -14,6 +14,7 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class GroupBuyActivityDaoTest {
     @Resource
+    /*** Resource 注解  首先是按名称匹配  之后按类型匹配*/
     private IGroupBuyActivityDao groupBuyActivityDao;
     @Test
     public void test_queryGroupBuyActivityList() {
