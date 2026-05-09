@@ -2,7 +2,10 @@ package com.wjx.domain.activity.service.trial.factory;
 
 import com.wjx.domain.activity.model.entity.MarketProductEntity;
 import com.wjx.domain.activity.model.entity.TrialBalanceEntity;
+import com.wjx.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
+import com.wjx.domain.activity.model.valobj.SkuVO;
 import com.wjx.domain.activity.service.trial.node.RootNode;
+import com.wjx.domain.activity.service.trial.thread.QuerySkuVOFromDBThreadTask;
 import com.wjx.types.design.framework.tree.StrategyHandler;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -29,6 +32,7 @@ public class DefaultActivityStrategyFactory {
     @AllArgsConstructor
     @NoArgsConstructor
     public static class DynamicContext {
-
+      private SkuVO skuVO;
+      private GroupBuyActivityDiscountVO groupBuyActivityDiscountVO;
     }
 }
